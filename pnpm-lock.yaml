@@ -9,22 +9,32 @@ dependencies:
     specifier: ^6.0.1
     version: 6.0.1
   tevm:
-    specifier: 1.0.0-next.30
-    version: 1.0.0-next.30(typescript@5.3.3)
-  typescript:
-    specifier: ^5.3.3
-    version: 5.3.3
+    specifier: 1.0.0-next.33
+    version: 1.0.0-next.33(typescript@5.3.3)
 
 devDependencies:
   '@types/node':
     specifier: ^20.11.17
     version: 20.11.17
+  ts-node:
+    specifier: ^10.9.2
+    version: 10.9.2(@types/node@20.11.17)(typescript@5.3.3)
+  typescript:
+    specifier: ^5.3.3
+    version: 5.3.3
 
 packages:
 
   /@adraffy/ens-normalize@1.10.0:
     resolution: {integrity: sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==}
     dev: false
+
+  /@cspotcode/source-map-support@0.8.1:
+    resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.9
+    dev: true
 
   /@ethereumjs/block@5.1.1:
     resolution: {integrity: sha512-YRu5vzL+cCqr/0anGkgrMB/wLGmIbFrwLRFazAIXijb0VkxPqjWI2fMLhB4B8pOV6Xlp07jfjr25fLOAIzYYqA==}
@@ -198,6 +208,22 @@ packages:
       - supports-color
     dev: false
 
+  /@jridgewell/resolve-uri@3.1.1:
+    resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
+    engines: {node: '>=6.0.0'}
+    dev: true
+
+  /@jridgewell/sourcemap-codec@1.4.15:
+    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
+    dev: true
+
+  /@jridgewell/trace-mapping@0.3.9:
+    resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
+    dependencies:
+      '@jridgewell/resolve-uri': 3.1.1
+      '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
   /@noble/curves@1.2.0:
     resolution: {integrity: sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==}
     dependencies:
@@ -234,7 +260,7 @@ packages:
     resolution: {integrity: sha512-N1ZhksgwD3OBlwTv3R6KFEcPojl/W4ElJOeCZdi+vuI5QmTFwLq3OFf2zd2ROpKvxFdgZ6hUpb0dx9bVNEwYCA==}
     dependencies:
       '@noble/curves': 1.2.0
-      '@noble/hashes': 1.3.2
+      '@noble/hashes': 1.3.3
       '@scure/base': 1.1.5
     dev: false
 
@@ -249,7 +275,7 @@ packages:
   /@scure/bip39@1.2.1:
     resolution: {integrity: sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==}
     dependencies:
-      '@noble/hashes': 1.3.2
+      '@noble/hashes': 1.3.3
       '@scure/base': 1.1.5
     dev: false
 
@@ -260,19 +286,19 @@ packages:
       '@scure/base': 1.1.5
     dev: false
 
-  /@tevm/actions-types@1.0.0-next.30:
-    resolution: {integrity: sha512-7IVu04alF+IOOMdN9RxML2Q9cFn+mjo9gxyfLHSpY6d86vB+O4DEQawhrhcmSyREUqEaTfbkqxZPxIURqw9xcg==}
+  /@tevm/actions-types@1.0.0-next.33:
+    resolution: {integrity: sha512-hGHtH0tPIYh7FSq6FQhU529JSr7yH/Kl8fYcIHp29PZF8lhsCumref4gbJHGQl7YxZAwzBICxzq44q7bN3V4WA==}
     dev: false
 
-  /@tevm/actions@1.0.0-next.30(typescript@5.3.3):
-    resolution: {integrity: sha512-JhBWM8BwPvADOGvhSo6hgTSqH1hEudRUIEpmnRc2w8laqDrDcC3Qm4hbmp3eU9spND5U6c58xA+WYxJ8Cl5mpQ==}
+  /@tevm/actions@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-2S7zI9V9gvah5pvedQgEDm1MIqFVvodavWK/uBoOFnffAzFk2GZx9GDxGOYi5YEyYFKrnS5ds9Glg4jWw3qpfQ==}
     dependencies:
       '@ethereumjs/block': 5.1.1
       '@ethereumjs/blockchain': 7.1.0
       '@ethereumjs/util': 9.0.2
       '@ethereumjs/vm': 7.2.1
       '@tevm/jsonrpc': 1.0.0-next.28
-      '@tevm/zod': 1.0.0-next.28(typescript@5.3.3)
+      '@tevm/zod': 1.0.0-next.33(typescript@5.3.3)
       viem: 2.7.8(typescript@5.3.3)(zod@3.22.4)
     transitivePeerDependencies:
       - bufferutil
@@ -283,8 +309,8 @@ packages:
       - zod
     dev: false
 
-  /@tevm/client-types@1.0.0-next.30:
-    resolution: {integrity: sha512-9A3LJeNrc16Js3c4PeaZrDkbI+jVqF8+nLj6SaJ6/mxGfERoo3iezYFe3L8jPXPyrGy3KLyeBrE/kYBvBJCqKg==}
+  /@tevm/client-types@1.0.0-next.32:
+    resolution: {integrity: sha512-k8kOdEgUjaCs+/w3FeuW7J5Th37EUZVaVS4MMDcgswPHeZqJYur5YPfCygO0oA0yggCCCfhFhHYrjjnLl9C5QQ==}
     dev: false
 
   /@tevm/contract@1.0.0-next.28(typescript@5.3.3):
@@ -303,11 +329,11 @@ packages:
     resolution: {integrity: sha512-f/sm6ap/fwMVmT8BUW1CHWyWmUfvU64mXOvkDcQOvw8FHIG5LiVTvlka6SvaQOdG9gfEjrXvVFIdRWi4xQTmaw==}
     dev: false
 
-  /@tevm/http-client@1.0.0-next.30(typescript@5.3.3):
-    resolution: {integrity: sha512-EOngAiEREyURWOZwKwnQs3Up2lzvqzDMN4mVeLxHFeUxdydscRiam9zKTnkoBIQhcDnJZzHQYSEE3hCgfQDW/g==}
+  /@tevm/http-client@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-8/N4A4UjBA7DdojnNtvX8QLxwrrzccw/rTseFLZK0moLIJ/eu3+RYrzheY2DXo1tGod1Q9P4dc3mLarPyKknFA==}
     dependencies:
       '@tevm/contract': 1.0.0-next.28(typescript@5.3.3)
-      '@tevm/viem': 1.0.0-next.30(viem@2.7.8)
+      '@tevm/viem': 1.0.0-next.33(viem@2.7.8)
       viem: 2.7.8(typescript@5.3.3)(zod@3.22.4)
     transitivePeerDependencies:
       - bufferutil
@@ -320,8 +346,8 @@ packages:
     resolution: {integrity: sha512-egcyJx1X429JkTuAEzybDaOwwP3dNadlr9ME5FxCWKvYTvJVRxqUkLfekztFx+DuSL4PvUExz+HV65FJaqU93Q==}
     dev: false
 
-  /@tevm/memory-client@1.0.0-next.30(typescript@5.3.3):
-    resolution: {integrity: sha512-/sKvIE3xvoPVydm2rNYmOD3dgXWqtJCibNE941ksZ0FMINdHre/HsiwglQXLPz4eh7smShdF6TEokqNOl0BotQ==}
+  /@tevm/memory-client@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-p+nLY2Ar+i5muFdJvjcDy6iFX1XCX/x6Y8s8JmqulbTNwC8Lh2MR4gKT4v5PuPc7aRMGqLPuSy/JvJmDyjhPjg==}
     dependencies:
       '@ethereumjs/block': 5.1.1
       '@ethereumjs/blockchain': 7.1.0
@@ -329,11 +355,9 @@ packages:
       '@ethereumjs/evm': 2.2.1
       '@ethereumjs/trie': 6.1.1
       '@ethereumjs/vm': 7.2.1
-      '@tevm/actions': 1.0.0-next.30(typescript@5.3.3)
+      '@tevm/actions': 1.0.0-next.33(typescript@5.3.3)
       '@tevm/contract': 1.0.0-next.28(typescript@5.3.3)
-      '@tevm/errors': 1.0.0-next.28
-      '@tevm/jsonrpc': 1.0.0-next.28
-      '@tevm/procedures': 1.0.0-next.30(typescript@5.3.3)
+      '@tevm/procedures': 1.0.0-next.33(typescript@5.3.3)
       viem: 2.7.8(typescript@5.3.3)(zod@3.22.4)
     transitivePeerDependencies:
       - bufferutil
@@ -359,8 +383,8 @@ packages:
       - zod
     dev: false
 
-  /@tevm/predeploys@1.0.0-next.28(typescript@5.3.3):
-    resolution: {integrity: sha512-dDozc4yi7Dj4Koz86qbSZjs6PYI3LNv+L2y5LmTDH9mwGOos7PTLX/oJUtyXcIknXAmWq3PSVejjS3lpp1OXKg==}
+  /@tevm/predeploys@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-bvRyf1pCSJXAK/tYf1QtKS3wRBoHRhlhFPYBmihBc2qlV+Q4IDtK6V0jrBm3t03DFEIrd6EgL+jrupteBcRCMQ==}
     dependencies:
       '@ethereumjs/util': 9.0.2
       '@tevm/contract': 1.0.0-next.28(typescript@5.3.3)
@@ -374,17 +398,16 @@ packages:
       - zod
     dev: false
 
-  /@tevm/procedures-types@1.0.0-next.30:
-    resolution: {integrity: sha512-l7WLm91eeRiiErhQ71G6fo71nX28PKunI7opZLwXxLfdsH2tX5eugpzDQr9zN/ICfShG1v58lYoSA6KB+1923Q==}
+  /@tevm/procedures-types@1.0.0-next.32:
+    resolution: {integrity: sha512-fytp8drdUKk/nMKch1Atpy4rXJ8eTRoFpdQLGzpFxdxYOjLFH8J2odB8Jl+BH7i6en2QafB2Iz8mXk0XBtBTXg==}
     dev: false
 
-  /@tevm/procedures@1.0.0-next.30(typescript@5.3.3):
-    resolution: {integrity: sha512-2yUVI6lLw/JC8vbZD6Qy0NRWe8PWrepsTmCkkvUQZMoG4QXHDUBxLRZl8GXiGCh6hpF/XvYPm7jOOGJRG2HxtQ==}
+  /@tevm/procedures@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-V+5a/U81m/PKO4+PgriwAc3J/JZurTvPRHyJKcKAozT21ciwcmpQUSHOeRlRseWSoFns/l62piri12ppzzMZ0g==}
     dependencies:
       '@ethereumjs/block': 5.1.1
-      '@ethereumjs/blockchain': 7.1.0
       '@ethereumjs/util': 9.0.2
-      '@tevm/actions': 1.0.0-next.30(typescript@5.3.3)
+      '@tevm/actions': 1.0.0-next.33(typescript@5.3.3)
       viem: 2.7.8(typescript@5.3.3)(zod@3.22.4)
     transitivePeerDependencies:
       - bufferutil
@@ -395,18 +418,18 @@ packages:
       - zod
     dev: false
 
-  /@tevm/server@1.0.0-next.28(typescript@5.3.3):
-    resolution: {integrity: sha512-5UGFKMWhffXuHIQPrYYo8L9wa1cDDJQ9U+vlC9FDE+HPnsp6UYJmz/+QJVTVudK1JPf+RPsAMYAMQEZJb3S3vA==}
+  /@tevm/server@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-APB1LaDqNEm2dEBxG2+0pKswYZptcllWv41OHP4/0tg8cmyS9cqtKEEKD8fNyU4I0shwk1PpoTTfCcQz1iIAnQ==}
     dependencies:
-      '@tevm/zod': 1.0.0-next.28(typescript@5.3.3)
+      '@tevm/zod': 1.0.0-next.33(typescript@5.3.3)
     transitivePeerDependencies:
       - bufferutil
       - typescript
       - utf-8-validate
     dev: false
 
-  /@tevm/state@1.0.0-next.30(typescript@5.3.3):
-    resolution: {integrity: sha512-mZL/HGA4wu/VrzoMBQGH8hkjCKcB1Sruq4LzDC/02QWsUdQhfpMfUwFkNpdEkMdyfZRe6W2C2pl1O6FaxtZ3Ow==}
+  /@tevm/state@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-jGcjM24TxRCwxuZION4nZehL95tAF+WvElmfZtpUOx1+u0qgOE8vXR8DJ/uIJgUWDVH+RKRC9Ad0QVVecfV+6g==}
     dependencies:
       '@ethereumjs/common': 4.2.0
       '@ethereumjs/statemanager': 2.2.2
@@ -425,16 +448,17 @@ packages:
       - zod
     dev: false
 
-  /@tevm/viem@1.0.0-next.30(viem@2.7.8):
-    resolution: {integrity: sha512-rninoU3qkrq0nuEle5lrSM2OjYYf8q4wOZH0qSNDfQY/2w8D9yPxsKSfLWv06eK7sl4NMTeuFLqmumrfFiUZEw==}
+  /@tevm/viem@1.0.0-next.33(viem@2.7.8):
+    resolution: {integrity: sha512-KagbFdqjtBxO7EHdkIFGEc6MFumbj5i6WAdV1ialTiyo1lH+csBfhtDNrDUbo/+dr9jYf/xx/Ao9Em82rmdjfw==}
     peerDependencies:
       viem: 2.x.x
     dependencies:
+      '@tevm/jsonrpc': 1.0.0-next.28
       viem: 2.7.8(typescript@5.3.3)(zod@3.22.4)
     dev: false
 
-  /@tevm/zod@1.0.0-next.28(typescript@5.3.3):
-    resolution: {integrity: sha512-vS9VTL/vdO8fe9bdQpkJqeajoP+/2TAZsVxLoRlKUZVt5PAcj9OnIW5t8HSkmQY5ZlT7ZUg5dGdWfekFuHNp1A==}
+  /@tevm/zod@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-WSDHHNA0KUHwstUMmTxStaq3EyKi0zCse2JuUEtvzhr6C/6yFltAVsJQr5jxorIjVnyo+MV/xclHTcA3WDVB5A==}
     dependencies:
       abitype: 0.10.3(typescript@5.3.3)(zod@3.22.4)
       viem: 2.7.8(typescript@5.3.3)(zod@3.22.4)
@@ -444,6 +468,22 @@ packages:
       - typescript
       - utf-8-validate
     dev: false
+
+  /@tsconfig/node10@1.0.9:
+    resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
+    dev: true
+
+  /@tsconfig/node12@1.0.11:
+    resolution: {integrity: sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==}
+    dev: true
+
+  /@tsconfig/node14@1.0.3:
+    resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
+    dev: true
+
+  /@tsconfig/node16@1.0.4:
+    resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
+    dev: true
 
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
@@ -501,10 +541,29 @@ packages:
       zod: 3.22.4
     dev: false
 
+  /acorn-walk@8.3.2:
+    resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
+    engines: {node: '>=0.4.0'}
+    dev: true
+
+  /acorn@8.11.3:
+    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: true
+
+  /arg@4.1.3:
+    resolution: {integrity: sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==}
+    dev: true
+
   /bigint-crypto-utils@3.3.0:
     resolution: {integrity: sha512-jOTSb+drvEDxEq6OuUybOAv/xxoh3cuYRUIPyu8sSHQNKM303UQ2R1DAo45o1AkcIXw6fzbaFI1+xGGdaXs2lg==}
     engines: {node: '>=14.0.0'}
     dev: false
+
+  /create-require@1.1.1:
+    resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
+    dev: true
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -517,6 +576,11 @@ packages:
     dependencies:
       ms: 2.1.2
     dev: false
+
+  /diff@4.0.2:
+    resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
+    engines: {node: '>=0.3.1'}
+    dev: true
 
   /ethereum-cryptography@2.1.3:
     resolution: {integrity: sha512-BlwbIL7/P45W8FGW2r7LGuvoEZ+7PWsniMvQ4p5s2xCyw9tmaDlpfsN9HjAucbF+t/qpVHwZUisgfK24TCW8aA==}
@@ -547,6 +611,10 @@ packages:
     resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
     engines: {node: 14 || >=16.14}
     dev: false
+
+  /make-error@1.3.6:
+    resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
+    dev: true
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
@@ -593,21 +661,21 @@ packages:
       safe-buffer: 5.2.1
     dev: false
 
-  /tevm@1.0.0-next.30(typescript@5.3.3):
-    resolution: {integrity: sha512-r/lnp3G1+xKlAEDsX/CWQCRNaJk86ois6MRI9xUo24pjTZiWkVyUQkmP6zaYer9vDXAU8ObnwK3LZEol/9Alaw==}
+  /tevm@1.0.0-next.33(typescript@5.3.3):
+    resolution: {integrity: sha512-BcRy5k/IEhOmX7CkKpiUwKy1qKYO9WObrcrmLIrV9GfdgghzZpD8yqmlcav4wagxHDBPFnPKMeVBXKpPsptsGw==}
     dependencies:
-      '@tevm/actions-types': 1.0.0-next.30
-      '@tevm/client-types': 1.0.0-next.30
+      '@tevm/actions-types': 1.0.0-next.33
+      '@tevm/client-types': 1.0.0-next.32
       '@tevm/contract': 1.0.0-next.28(typescript@5.3.3)
       '@tevm/errors': 1.0.0-next.28
-      '@tevm/http-client': 1.0.0-next.30(typescript@5.3.3)
+      '@tevm/http-client': 1.0.0-next.33(typescript@5.3.3)
       '@tevm/jsonrpc': 1.0.0-next.28
-      '@tevm/memory-client': 1.0.0-next.30(typescript@5.3.3)
+      '@tevm/memory-client': 1.0.0-next.33(typescript@5.3.3)
       '@tevm/precompiles': 1.0.0-next.28(typescript@5.3.3)
-      '@tevm/predeploys': 1.0.0-next.28(typescript@5.3.3)
-      '@tevm/procedures-types': 1.0.0-next.30
-      '@tevm/server': 1.0.0-next.28(typescript@5.3.3)
-      '@tevm/state': 1.0.0-next.30(typescript@5.3.3)
+      '@tevm/predeploys': 1.0.0-next.33(typescript@5.3.3)
+      '@tevm/procedures-types': 1.0.0-next.32
+      '@tevm/server': 1.0.0-next.33(typescript@5.3.3)
+      '@tevm/state': 1.0.0-next.33(typescript@5.3.3)
     transitivePeerDependencies:
       - bufferutil
       - c-kzg
@@ -617,11 +685,41 @@ packages:
       - zod
     dev: false
 
+  /ts-node@10.9.2(@types/node@20.11.17)(typescript@5.3.3):
+    resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.50'
+      '@swc/wasm': '>=1.2.50'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.11.17
+      acorn: 8.11.3
+      acorn-walk: 8.3.2
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 5.3.3
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    dev: true
+
   /typescript@5.3.3:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: false
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
@@ -629,6 +727,10 @@ packages:
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: false
+
+  /v8-compile-cache-lib@3.0.1:
+    resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
+    dev: true
 
   /viem@2.7.8(typescript@5.3.3)(zod@3.22.4):
     resolution: {integrity: sha512-5r5pkBDBmihCvMx4b3MqtP0FoZCRWE2ML1DssU80+vhJQur0PKd4yHdLbbvoiGGVD6bYiA394juhfdSvXIGgFA==}
@@ -665,6 +767,11 @@ packages:
       utf-8-validate:
         optional: true
     dev: false
+
+  /yn@3.1.1:
+    resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
+    engines: {node: '>=6'}
+    dev: true
 
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
