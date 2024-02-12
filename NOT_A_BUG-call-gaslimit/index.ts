@@ -1,3 +1,10 @@
+/* -------------------------------------------------------------------------- */
+/*                              FIXED - NOT A BUG                             */
+/* -------------------------------------------------------------------------- */
+// Just need to pass the `gas` parameter to the `tevm.call` method to override the default gas limit
+// Needs to be careful because there is no limit so this can be cause of a DDoS attack
+// if not configured correctly
+
 // tevm@1.0.0-next.33
 // Run with: pnpm ts-node call-gaslimit/index.ts
 import { createMemoryClient, encodeFunctionData, TevmClient } from 'tevm';
