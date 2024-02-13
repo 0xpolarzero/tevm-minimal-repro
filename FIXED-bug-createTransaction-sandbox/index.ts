@@ -1,12 +1,12 @@
+/* -------------------------------------------------------------------------- */
+/*                                    FIXED                                   */
+/* -------------------------------------------------------------------------- */
+
 // tevm@1.0.0-next.33
+// Fixed in tevm@1.0.0-next.37
 // Run with: pnpm ts-node bug-createTransaction-sandbox/index.ts
-import { createMemoryClient, encodeFunctionData, TevmClient } from 'tevm';
-import {
-  MOCKERC20_BYTECODE,
-  MOCKERC20_ABI,
-  GASLITEDROP_ADDRESS,
-  GASLITEDROP_ABI,
-} from '../constants';
+import { createMemoryClient, encodeFunctionData } from 'tevm';
+import { MOCKERC20_BYTECODE, MOCKERC20_ABI } from '../constants';
 
 const run = async () => {
   const caller = `0x${'1'.repeat(40)}` as const;
