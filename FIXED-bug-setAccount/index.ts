@@ -3,6 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 // tevm@1.0.0-next.30
+// Fixed in: tevm@1.0.0-next.30
 // Run with pnpm ts-node bug-setAccount/index.ts
 import { createMemoryClient } from 'tevm';
 import { MOCKERC20_BYTECODE } from '../constants';
