@@ -1,5 +1,5 @@
 // Run with: pnpm ts-node benchmarks-loop/index.ts
-import { TevmClient, createMemoryClient, encodeFunctionData } from 'tevm';
+import { TevmClient, createMemoryClient } from 'tevm';
 import { MOCKERC1155_BYTECODE, MOCKERC1155_ABI } from '../constants';
 
 /* --------------------------------- RESULTS -------------------------------- */
