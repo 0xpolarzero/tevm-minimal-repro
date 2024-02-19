@@ -169,7 +169,7 @@ export const MOCKERC20_ABI = [
     stateMutability: 'nonpayable',
     type: 'function',
   },
-];
+] as const;
 
 /* -------------------------------------------------------------------------- */
 /*                                MOCK ERC1155                                */
@@ -367,7 +367,7 @@ export const MOCKERC1155_ABI = [
     stateMutability: 'pure',
     type: 'function',
   },
-];
+] as const;
 
 /* -------------------------------------------------------------------------- */
 /*                              AIRDROP CONTRACT                              */
@@ -391,4 +391,4 @@ export const GASLITEDROP_ABI = [
     stateMutability: 'payable',
     type: 'function',
   },
-];
+] as const;

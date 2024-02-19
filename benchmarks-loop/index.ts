@@ -25,7 +25,7 @@ const token = '0x171593d3E5Bc8A2E869600F951ed532B9780Cbd2';
 let tevm: TevmClient;
 
 // Batch mint provided tokens ids/amounts pairs
-const batchMint = async (ids: string[], amounts: string[]) => {
+const batchMint = async (ids: bigint[], amounts: bigint[]) => {
   const { errors: mintErrors } = await tevm.contract({
     caller,
     to: token,
@@ -59,8 +59,8 @@ const prepare = async () => {
 const runStep = async (step: number) => {
   const ids = Array(step)
     .fill(0)
-    .map((_, i) => i.toString());
-  const amounts = Array(step).fill('1000000000000000000');
+    .map((_, i) => BigInt(i));
+  const amounts = Array(step).fill(BigInt('1000000000000000000'));
 
   const start = Date.now();
   await batchMint(ids, amounts);

@@ -34,7 +34,6 @@ const run = async () => {
 
   // Prepare airdrop args (1000 random recipients)
   const { recipients, amounts, totalAmount } = prepareArgs(800);
-  const args = [token, recipients, amounts, totalAmount];
   // Mint tokens
   await mintTokens(tevm, caller, token, totalAmount);
   // Approve spending of tokens by GasliteDrop
@@ -51,7 +50,7 @@ const run = async () => {
     data: encodeFunctionData({
       abi: GASLITEDROP_ABI,
       functionName: 'airdropERC20',
-      args,
+      args: [token, recipients, amounts, totalAmount],
     }),
     createTransaction: true,
   });
@@ -71,16 +70,14 @@ const run = async () => {
 
 const prepareArgs = (
   numRecipients: number,
-): { recipients: `0x${string}`[]; amounts: string[]; totalAmount: string } => {
+): { recipients: `0x${string}`[]; amounts: bigint[]; totalAmount: bigint } => {
   const singleAmount = BigInt(1e18);
   const recipients = Array.from(
     { length: numRecipients },
     (_, i) => `0x${i.toString().padStart(40, '0')}` as `0x${string}`,
   );
-  const amounts = Array.from({ length: numRecipients }, () =>
-    singleAmount.toString(),
-  );
-  const totalAmount = (singleAmount * BigInt(recipients.length)).toString();
+  const amounts = Array.from({ length: numRecipients }, () => singleAmount);
+  const totalAmount = singleAmount * BigInt(recipients.length);
 
   return { recipients, amounts, totalAmount };
 };
@@ -89,7 +86,7 @@ const mintTokens = async (
   tevm: TevmClient,
   caller: `0x${string}`,
   token: `0x${string}`,
-  amount: string,
+  amount: bigint,
 ) => {
   const { errors: mintErrors } = await tevm.call({
     caller,
@@ -109,7 +106,7 @@ const approveGasliteDrop = async (
   tevm: TevmClient,
   caller: `0x${string}`,
   token: `0x${string}`,
-  amount: string,
+  amount: bigint,
 ) => {
   const { errors: approveErrors } = await tevm.call({
     caller,

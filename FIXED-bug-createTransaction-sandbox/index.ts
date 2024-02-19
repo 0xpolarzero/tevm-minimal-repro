@@ -24,7 +24,7 @@ const run = async () => {
     deployedBytecode: MOCKERC20_BYTECODE,
   });
 
-  const amount = BigInt(1e18).toString();
+  const amount = BigInt(1e18);
   // Mint tokens
   const { errors: mintErrors } = await tevm.call({
     caller,

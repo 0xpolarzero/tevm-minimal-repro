@@ -5,7 +5,7 @@ import { MOCKERC20_BYTECODE, MOCKERC20_ABI } from '../constants';
 
 const caller = `0x${'1'.repeat(40)}` as const;
 const recipient = `0x${'2'.repeat(40)}` as const;
-const amount = BigInt(1e18).toString();
+const amount = BigInt(1e18);
 const token = `0x${'3'.repeat(40)}` as const;
 
 const run = async () => {
