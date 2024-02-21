@@ -1,0 +1,1034 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  next:
+    specifier: 14.1.0
+    version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+  react:
+    specifier: ^18
+    version: 18.2.0
+  react-dom:
+    specifier: ^18
+    version: 18.2.0(react@18.2.0)
+  tevm:
+    specifier: 1.0.0-next.40
+    version: 1.0.0-next.40(typescript@5.3.3)
+
+devDependencies:
+  '@types/node':
+    specifier: ^20
+    version: 20.11.19
+  '@types/react':
+    specifier: ^18
+    version: 18.2.57
+  '@types/react-dom':
+    specifier: ^18
+    version: 18.2.19
+  typescript:
+    specifier: ^5
+    version: 5.3.3
+
+packages:
+
+  /@adraffy/ens-normalize@1.10.0:
+    resolution: {integrity: sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==}
+    dev: false
+
+  /@ethereumjs/block@5.1.1:
+    resolution: {integrity: sha512-YRu5vzL+cCqr/0anGkgrMB/wLGmIbFrwLRFazAIXijb0VkxPqjWI2fMLhB4B8pOV6Xlp07jfjr25fLOAIzYYqA==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/trie': 6.1.1
+      '@ethereumjs/tx': 5.2.1
+      '@ethereumjs/util': 9.0.2
+      ethereum-cryptography: 2.1.3
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@ethereumjs/blockchain@7.1.0:
+    resolution: {integrity: sha512-wqHZdlnjAwwH+AH6IBjSs7uQ/2UhEfFRs79OfPN8XHBoCGxCikSgjvN6v7XWl8nHUdfZFQk6LpEVkruNx5wF3A==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ethereumjs/block': 5.1.1
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/ethash': 3.0.2
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/trie': 6.1.1
+      '@ethereumjs/tx': 5.2.1
+      '@ethereumjs/util': 9.0.2
+      debug: 4.3.4
+      ethereum-cryptography: 2.1.3
+      lru-cache: 10.2.0
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@ethereumjs/common@4.2.0:
+    resolution: {integrity: sha512-UWqovZQksxEY9cU+s1cF3JwFyJdKrJsURM+ORHpZZLQfsqQf+1uGbD3N0AvQ7M+Jz/LxkiVY98+Cd3OMzsrOcA==}
+    dependencies:
+      '@ethereumjs/util': 9.0.2
+    transitivePeerDependencies:
+      - c-kzg
+    dev: false
+
+  /@ethereumjs/ethash@3.0.2:
+    resolution: {integrity: sha512-iJEH63xudwzSYxYb81RX2Mf2+Wkuu6P7ism29wpM7fxQE+pcI9S6V65CaITprH98SAZjuMrZU6ZGHDGbqolSkg==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ethereumjs/block': 5.1.1
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/util': 9.0.2
+      bigint-crypto-utils: 3.3.0
+      ethereum-cryptography: 2.1.3
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@ethereumjs/evm@2.2.1:
+    resolution: {integrity: sha512-equF3QqssDgfZyVDEoMqJUsMCjO9SwgFdpUTc7yHFOU74X43l/MHM+Cqdey+wcBhdU2yOwD9S2AbW6wh7tDYfQ==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/statemanager': 2.2.2
+      '@ethereumjs/tx': 5.2.1
+      '@ethereumjs/util': 9.0.2
+      '@types/debug': 4.1.12
+      debug: 4.3.4
+      ethereum-cryptography: 2.1.3
+      rustbn-wasm: 0.2.0
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@ethereumjs/rlp@5.0.2:
+    resolution: {integrity: sha512-DziebCdg4JpGlEqEdGgXmjqcFoJi+JGulUXwEjsZGAscAQ7MyD/7LE/GVCP29vEQxKc7AAwjT3A2ywHp2xfoCA==}
+    engines: {node: '>=18'}
+    hasBin: true
+    dev: false
+
+  /@ethereumjs/statemanager@2.2.2:
+    resolution: {integrity: sha512-4CxZgsL0M3hePXEQjrvXasGrGxGNMhURWb6i0UPCynPogR9PT7AD1pq80IYJ5vSd5PvIqvw7BtqSOgJGdQrBHw==}
+    dependencies:
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/trie': 6.1.1
+      '@ethereumjs/util': 9.0.2
+      '@ethereumjs/verkle': 0.0.1
+      debug: 4.3.4
+      ethereum-cryptography: 2.1.3
+      js-sdsl: 4.4.2
+      lru-cache: 10.2.0
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@ethereumjs/trie@6.1.1:
+    resolution: {integrity: sha512-FwHnyUok4cDTueOfIarE4n0QJs3mFjSnSENMgsd07HzL5oEuxal3aN51MBP392czj5mordNCim1YVP4oE14I3A==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/util': 9.0.2
+      '@types/readable-stream': 2.3.15
+      debug: 4.3.4
+      ethereum-cryptography: 2.1.3
+      lru-cache: 10.2.0
+      readable-stream: 3.6.2
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@ethereumjs/tx@5.2.1:
+    resolution: {integrity: sha512-BzdtUaa7KtP8T5NxJWRxo/RBoJzxYeCdx2n2C4zZLuWJBYVccfcyMiyDgr6W78Utmu/jIfGXknfh2t06+rTkiw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      c-kzg: ^2.1.2
+    peerDependenciesMeta:
+      c-kzg:
+        optional: true
+    dependencies:
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/util': 9.0.2
+      ethereum-cryptography: 2.1.3
+    dev: false
+
+  /@ethereumjs/util@9.0.2:
+    resolution: {integrity: sha512-dasKCj6Vb5spVPnNmRDFHmbfBySvokE440F0RDroPLzO4Mb4hyDqeoOMUxlbLz/BscK2pOpWUendGA+AOvGpNQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      c-kzg: ^2.1.2
+    peerDependenciesMeta:
+      c-kzg:
+        optional: true
+    dependencies:
+      '@ethereumjs/rlp': 5.0.2
+      ethereum-cryptography: 2.1.3
+    dev: false
+
+  /@ethereumjs/verkle@0.0.1:
+    resolution: {integrity: sha512-w1FXJV8t+1yAbSR5n9kpuS6tN4+XXyptWYdSKFdHNQAt9Ie2H5leaEL2ufClA6B6KxaF8FMyMe/VhHn8xdw+uQ==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/util': 9.0.2
+      lru-cache: 10.2.0
+      rust-verkle-wasm: 0.0.1
+    transitivePeerDependencies:
+      - c-kzg
+    dev: false
+
+  /@ethereumjs/vm@7.2.1:
+    resolution: {integrity: sha512-exmyhDPlfiBtV/nIPY7gE5iu3QC62F7hf/fALLgQaUS8ezxmJQG2MRaFI1eqYwvsAhfNBfst7K6KcCE4jbGbhw==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@ethereumjs/block': 5.1.1
+      '@ethereumjs/blockchain': 7.1.0
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/evm': 2.2.1
+      '@ethereumjs/rlp': 5.0.2
+      '@ethereumjs/statemanager': 2.2.2
+      '@ethereumjs/trie': 6.1.1
+      '@ethereumjs/tx': 5.2.1
+      '@ethereumjs/util': 9.0.2
+      debug: 4.3.4
+      ethereum-cryptography: 2.1.3
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@next/env@14.1.0:
+    resolution: {integrity: sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==}
+    dev: false
+
+  /@next/swc-darwin-arm64@14.1.0:
+    resolution: {integrity: sha512-nUDn7TOGcIeyQni6lZHfzNoo9S0euXnu0jhsbMOmMJUBfgsnESdjN97kM7cBqQxZa8L/bM9om/S5/1dzCrW6wQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-darwin-x64@14.1.0:
+    resolution: {integrity: sha512-1jgudN5haWxiAl3O1ljUS2GfupPmcftu2RYJqZiMJmmbBT5M1XDffjUtRUzP4W3cBHsrvkfOFdQ71hAreNQP6g==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-linux-arm64-gnu@14.1.0:
+    resolution: {integrity: sha512-RHo7Tcj+jllXUbK7xk2NyIDod3YcCPDZxj1WLIYxd709BQ7WuRYl3OWUNG+WUfqeQBds6kvZYlc42NJJTNi4tQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-linux-arm64-musl@14.1.0:
+    resolution: {integrity: sha512-v6kP8sHYxjO8RwHmWMJSq7VZP2nYCkRVQ0qolh2l6xroe9QjbgV8siTbduED4u0hlk0+tjS6/Tuy4n5XCp+l6g==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-linux-x64-gnu@14.1.0:
+    resolution: {integrity: sha512-zJ2pnoFYB1F4vmEVlb/eSe+VH679zT1VdXlZKX+pE66grOgjmKJHKacf82g/sWE4MQ4Rk2FMBCRnX+l6/TVYzQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-linux-x64-musl@14.1.0:
+    resolution: {integrity: sha512-rbaIYFt2X9YZBSbH/CwGAjbBG2/MrACCVu2X0+kSykHzHnYH5FjHxwXLkcoJ10cX0aWCEynpu+rP76x0914atg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-win32-arm64-msvc@14.1.0:
+    resolution: {integrity: sha512-o1N5TsYc8f/HpGt39OUQpQ9AKIGApd3QLueu7hXk//2xq5Z9OxmV6sQfNp8C7qYmiOlHYODOGqNNa0e9jvchGQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-win32-ia32-msvc@14.1.0:
+    resolution: {integrity: sha512-XXIuB1DBRCFwNO6EEzCTMHT5pauwaSj4SWs7CYnME57eaReAKBXCnkUE80p/pAZcewm7hs+vGvNqDPacEXHVkw==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@next/swc-win32-x64-msvc@14.1.0:
+    resolution: {integrity: sha512-9WEbVRRAqJ3YFVqEZIxUqkiO8l1nool1LmNxygr5HWF8AcSYsEpneUDhmjUVJEzO2A04+oPtZdombzzPPkTtgg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@noble/curves@1.2.0:
+    resolution: {integrity: sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==}
+    dependencies:
+      '@noble/hashes': 1.3.2
+    dev: false
+
+  /@noble/curves@1.3.0:
+    resolution: {integrity: sha512-t01iSXPuN+Eqzb4eBX0S5oubSqXbK/xXa1Ne18Hj8f9pStxztHCE2gfboSp/dZRLSqfuLpRK2nDXDK+W9puocA==}
+    dependencies:
+      '@noble/hashes': 1.3.3
+    dev: false
+
+  /@noble/hashes@1.3.2:
+    resolution: {integrity: sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==}
+    engines: {node: '>= 16'}
+    dev: false
+
+  /@noble/hashes@1.3.3:
+    resolution: {integrity: sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==}
+    engines: {node: '>= 16'}
+    dev: false
+
+  /@scure/base@1.1.5:
+    resolution: {integrity: sha512-Brj9FiG2W1MRQSTB212YVPRrcbjkv48FoZi/u4l/zds/ieRrqsh7aUf6CLwkAq61oKXr/ZlTzlY66gLIj3TFTQ==}
+    dev: false
+
+  /@scure/bip32@1.3.2:
+    resolution: {integrity: sha512-N1ZhksgwD3OBlwTv3R6KFEcPojl/W4ElJOeCZdi+vuI5QmTFwLq3OFf2zd2ROpKvxFdgZ6hUpb0dx9bVNEwYCA==}
+    dependencies:
+      '@noble/curves': 1.2.0
+      '@noble/hashes': 1.3.2
+      '@scure/base': 1.1.5
+    dev: false
+
+  /@scure/bip32@1.3.3:
+    resolution: {integrity: sha512-LJaN3HwRbfQK0X1xFSi0Q9amqOgzQnnDngIt+ZlsBC3Bm7/nE7K0kwshZHyaru79yIVRv/e1mQAjZyuZG6jOFQ==}
+    dependencies:
+      '@noble/curves': 1.3.0
+      '@noble/hashes': 1.3.3
+      '@scure/base': 1.1.5
+    dev: false
+
+  /@scure/bip39@1.2.1:
+    resolution: {integrity: sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==}
+    dependencies:
+      '@noble/hashes': 1.3.2
+      '@scure/base': 1.1.5
+    dev: false
+
+  /@scure/bip39@1.2.2:
+    resolution: {integrity: sha512-HYf9TUXG80beW+hGAt3TRM8wU6pQoYur9iNypTROm42dorCGmLnFe3eWjz3gOq6G62H2WRh0FCzAR1PI+29zIA==}
+    dependencies:
+      '@noble/hashes': 1.3.3
+      '@scure/base': 1.1.5
+    dev: false
+
+  /@swc/helpers@0.5.2:
+    resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
+    dependencies:
+      tslib: 2.6.2
+    dev: false
+
+  /@tevm/actions-types@1.0.0-next.40:
+    resolution: {integrity: sha512-kMWl2hFGvL98MvzGSqMz3mPY+JqksL2TWewqwBXq6151IT97sMbn8aB2SbycmWdk9nVRADxBodZlZiF+QN2dIw==}
+    dev: false
+
+  /@tevm/actions@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-vQlIObkKfZFpKPY0hTV4IWJqmbTSd0u+dftPuFSAH9GU8Kx8+Z2y+jUfMwXJfCn1z0mYeut5SpVVYUS+O/RsBQ==}
+    dependencies:
+      '@tevm/jsonrpc': 1.0.0-next.40
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/vm': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/zod': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/base-client@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-ZZ+Lt7bcDrkc4oqrfuHDv2W0PWUtzwEA5wEQuEPWN0TJ+5fk1JaoMvBZT5INMs7Q83eJTpqzttnD8/aB0qaXgg==}
+    dependencies:
+      '@tevm/blockchain': 1.0.0-next.40
+      '@tevm/common': 1.0.0-next.40
+      '@tevm/evm': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/jsonrpc': 1.0.0-next.40
+      '@tevm/predeploys': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/state': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/sync-storage-persister': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/vm': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/blockchain@1.0.0-next.40:
+    resolution: {integrity: sha512-Fd4OuvBHr8+pIVh1fwQBClLUomPyDsILyL3AAmvlP9t1RYgETAsQbIbPVXqD2hHDaE5/uRlElMooQ5Q5bxlSJg==}
+    dependencies:
+      '@ethereumjs/block': 5.1.1
+      '@ethereumjs/blockchain': 7.1.0
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/trie': 6.1.1
+      '@ethereumjs/util': 9.0.2
+    transitivePeerDependencies:
+      - c-kzg
+      - supports-color
+    dev: false
+
+  /@tevm/client-types@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-XztzKAvhGYUs7YAfiSmpREzwkPzKE6mBnU+yHPXjt/zGp9sOmP6zr4f1TUrGczJ9CP/1WGDkCW3MHG36rOWCZg==}
+    dependencies:
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/common@1.0.0-next.40:
+    resolution: {integrity: sha512-iB+3NUR0eJ8SFekT64Wg5ANt0fBsjbgaB0i3jG0VbrgldbnyATq/xChLDt3k56Xi8loHc6Gxt3JQUvvF9OQ7iQ==}
+    dependencies:
+      '@ethereumjs/common': 4.2.0
+    transitivePeerDependencies:
+      - c-kzg
+    dev: false
+
+  /@tevm/contract@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-wwPI5QhBUm/c+5CqVPmwDLloCl+acMUl+jkOwIV78PAgszcKSMsrcZPRvZ7/OjxdGCKp5CIqJ0ekvrKp6FHJPA==}
+    dependencies:
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/decorators@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-KUIoLWljbNuarm0ic41eGiN+UUEmHiAb1e0CHisAHXjUMcn/K/5YsfGWEQkLuS60VzoIA0wJM4I0jAfcFeBSzw==}
+    dependencies:
+      '@tevm/actions': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/actions-types': 1.0.0-next.40
+      '@tevm/procedures': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/errors@1.0.0-next.40:
+    resolution: {integrity: sha512-u6zV4gZBXUS6iobuUNUEdwdHTJjqDIs2J+nF2rKXup0aKohasgJ5NDuC5SvtSsfBzvxv0s19vJ+UZY8qJ8cVLw==}
+    dev: false
+
+  /@tevm/evm@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-hEGm4oiOvn8jwYtmRPU2lWqf8B7vg67YTLNiSfX3LFOQ8n2eIuQIaWGEZPoIHsf3OzlpKw+C8MSL6iE2YBiwBw==}
+    dependencies:
+      '@ethereumjs/evm': 2.2.1
+      '@tevm/blockchain': 1.0.0-next.40
+      '@tevm/common': 1.0.0-next.40
+      '@tevm/predeploys': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/http-client@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-edLcdukDvecEumCufNfKDvsphNYwdVNO0VjWJkLMdjnQTgAXBJPJ1GTc9oA9CAgyvd0aUWhiRkHo+k4eqtM17A==}
+    dependencies:
+      '@tevm/contract': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/viem': 1.0.0-next.40(viem@2.7.11)
+      viem: 2.7.11(typescript@5.3.3)(zod@3.22.4)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/jsonrpc@1.0.0-next.40:
+    resolution: {integrity: sha512-skYRmHS7o0by7zAFU+XY8NBSWiObeg8LrrmLcC3GndbGSxcppLbuRiLRs5hPmcMK96l2zQdVK5BR8EJCKqh4Ig==}
+    dev: false
+
+  /@tevm/memory-client@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-gmZCN58ESyIoXAOGsRya2dBuAtHPQ0mxWhJ43pyV/RChH1kDgDkIcoVFhDwFXMbpk4cpySX2OnD9YJjUowBinA==}
+    dependencies:
+      '@ethereumjs/evm': 2.2.1
+      '@ethereumjs/util': 9.0.2
+      '@tevm/base-client': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/contract': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/decorators': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/precompiles@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-ZT0qEK2s3yT2b8vs3OrrzFAlpKWkG3zeZgQ43WMOpeq5OqYqysrRcm0TFJCbH8s2fawMkRt9Nf4HQb88BsXTxg==}
+    dependencies:
+      '@ethereumjs/evm': 2.2.1
+      '@tevm/contract': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/predeploys@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-zyaR5W07KhDiF+0MO/sm5O5Ce1bCE9g5Kuj9ZdcQc/he8+4wq2oOL+tHs+dIjFjDIIDm4Jpmj3WDBwlAOfMEOw==}
+    dependencies:
+      '@ethereumjs/util': 9.0.2
+      '@tevm/contract': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/procedures-types@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-UIsqgYHqxTLV+vi7t+14y4lDOKZHMhXbtFs9NmijoPrHXIhZuk89lpYsAjifXppd5IwqvYZlLFd1MJlOOOTiZQ==}
+    dependencies:
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/procedures@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-cgzyb38Kx/wn6O7IWehflBOIOsXlol3L88VUlXP3jHvbuhmeo+UgZRM8qQ7x0l4WqjhlqvxI6oWtM3pdgk73Kw==}
+    dependencies:
+      '@ethereumjs/util': 9.0.2
+      '@tevm/actions': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/server@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-8dxNZOrP0WD42Mytc3wBS0liMe4/f/KjBEATiVv0oqnP4Q923rWr41TYHHyd06t3TrPpIhJxbHJa2sOVmkf2XA==}
+    dependencies:
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/zod': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/state@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-b143Zkr/r32fQYIj9k3QLn40z0y94s63Zrp3aMA49D+LPpC9W4vQKInjnu1bNriALG8tt5lZNVfebDUYqD7B4g==}
+    dependencies:
+      '@ethereumjs/common': 4.2.0
+      '@ethereumjs/statemanager': 2.2.2
+      '@ethereumjs/trie': 6.1.1
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+      ethereum-cryptography: 2.1.3
+      viem: 2.7.11(typescript@5.3.3)(zod@3.22.4)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/sync-storage-persister@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-V43pgLVhOX9FFt9gnqc0gCcD2UFa+eJbxh8YL1PqFPWSv0zrgGwpzej3MeIFTaSzrR5bY/OdA3jtPCQonFNnGQ==}
+    dependencies:
+      '@tevm/state': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/utils@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-2vv7OiNMNxcZa6eeJz9ok/lUxeHZZYHQMX8vdzk1j0vhcWr3lqA3fV2o/2aeEKHwWvIOGDrs9QUwRs+/raM6ng==}
+    dependencies:
+      '@ethereumjs/util': 9.0.2
+      abitype: 1.0.0(typescript@5.3.3)(zod@3.22.4)
+      viem: 2.7.11(typescript@5.3.3)(zod@3.22.4)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/viem@1.0.0-next.40(viem@2.7.11):
+    resolution: {integrity: sha512-BbC8DLrjmhQG44AGm5mFM78uFiKJ63cvPsoNgpSmFeHM6VzJKsoovKdc5YExRs0VsAE75cC1yQmxvSj68HTMjQ==}
+    peerDependencies:
+      viem: 2.x.x
+    dependencies:
+      '@tevm/jsonrpc': 1.0.0-next.40
+      viem: 2.7.11(typescript@5.3.3)(zod@3.22.4)
+    dev: false
+
+  /@tevm/vm@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-Y0+jrjfU8rY3oHkTqQOdnYRS6A5o1WW9r9XFTWX+uCKx55F/HScvNsrH1mjDRBRyfugR6wcKnPj3Mnp4WAVusA==}
+    dependencies:
+      '@ethereumjs/vm': 7.2.1
+      '@tevm/blockchain': 1.0.0-next.40
+      '@tevm/common': 1.0.0-next.40
+      '@tevm/evm': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/zod@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-7J/oafqRDYOB7S+zC0vRJF47O3YutfGQNw288LVondVQVCOP8+qI/AyCIufyFsiKQjg8OgJlUMyoGI0B9vjW0Q==}
+    dependencies:
+      abitype: 1.0.0(typescript@5.3.3)(zod@3.22.4)
+      viem: 2.7.11(typescript@5.3.3)(zod@3.22.4)
+      zod: 3.22.4
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+    dev: false
+
+  /@types/debug@4.1.12:
+    resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
+    dependencies:
+      '@types/ms': 0.7.34
+    dev: false
+
+  /@types/ms@0.7.34:
+    resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
+    dev: false
+
+  /@types/node@20.11.19:
+    resolution: {integrity: sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ==}
+    dependencies:
+      undici-types: 5.26.5
+
+  /@types/prop-types@15.7.11:
+    resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
+    dev: true
+
+  /@types/react-dom@18.2.19:
+    resolution: {integrity: sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==}
+    dependencies:
+      '@types/react': 18.2.57
+    dev: true
+
+  /@types/react@18.2.57:
+    resolution: {integrity: sha512-ZvQsktJgSYrQiMirAN60y4O/LRevIV8hUzSOSNB6gfR3/o3wCBFQx3sPwIYtuDMeiVgsSS3UzCV26tEzgnfvQw==}
+    dependencies:
+      '@types/prop-types': 15.7.11
+      '@types/scheduler': 0.16.8
+      csstype: 3.1.3
+    dev: true
+
+  /@types/readable-stream@2.3.15:
+    resolution: {integrity: sha512-oM5JSKQCcICF1wvGgmecmHldZ48OZamtMxcGGVICOJA8o8cahXC1zEVAif8iwoc5j8etxFaRFnf095+CDsuoFQ==}
+    dependencies:
+      '@types/node': 20.11.19
+      safe-buffer: 5.1.2
+    dev: false
+
+  /@types/scheduler@0.16.8:
+    resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
+    dev: true
+
+  /abitype@1.0.0(typescript@5.3.3)(zod@3.22.4):
+    resolution: {integrity: sha512-NMeMah//6bJ56H5XRj8QCV4AwuW6hB6zqz2LnhhLdcWVQOsXki6/Pn3APeqxCma62nXIcmZWdu1DlHWS74umVQ==}
+    peerDependencies:
+      typescript: '>=5.0.4'
+      zod: ^3 >=3.22.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      zod:
+        optional: true
+    dependencies:
+      typescript: 5.3.3
+      zod: 3.22.4
+    dev: false
+
+  /bigint-crypto-utils@3.3.0:
+    resolution: {integrity: sha512-jOTSb+drvEDxEq6OuUybOAv/xxoh3cuYRUIPyu8sSHQNKM303UQ2R1DAo45o1AkcIXw6fzbaFI1+xGGdaXs2lg==}
+    engines: {node: '>=14.0.0'}
+    dev: false
+
+  /busboy@1.6.0:
+    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
+    engines: {node: '>=10.16.0'}
+    dependencies:
+      streamsearch: 1.1.0
+    dev: false
+
+  /caniuse-lite@1.0.30001588:
+    resolution: {integrity: sha512-+hVY9jE44uKLkH0SrUTqxjxqNTOWHsbnQDIKjwkZ3lNTzUUVdBLBGXtj/q5Mp5u98r3droaZAewQuEDzjQdZlQ==}
+    dev: false
+
+  /client-only@0.0.1:
+    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /csstype@3.1.3:
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+    dev: true
+
+  /debug@4.3.4:
+    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+    dev: false
+
+  /ethereum-cryptography@2.1.3:
+    resolution: {integrity: sha512-BlwbIL7/P45W8FGW2r7LGuvoEZ+7PWsniMvQ4p5s2xCyw9tmaDlpfsN9HjAucbF+t/qpVHwZUisgfK24TCW8aA==}
+    dependencies:
+      '@noble/curves': 1.3.0
+      '@noble/hashes': 1.3.3
+      '@scure/bip32': 1.3.3
+      '@scure/bip39': 1.2.2
+    dev: false
+
+  /graceful-fs@4.2.11:
+    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+    dev: false
+
+  /inherits@2.0.4:
+    resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+    dev: false
+
+  /isows@1.0.3(ws@8.13.0):
+    resolution: {integrity: sha512-2cKei4vlmg2cxEjm3wVSqn8pcoRF/LX/wpifuuNquFO4SQmPwarClT+SUCA2lt+l581tTeZIPIZuIDo2jWN1fg==}
+    peerDependencies:
+      ws: '*'
+    dependencies:
+      ws: 8.13.0
+    dev: false
+
+  /js-sdsl@4.4.2:
+    resolution: {integrity: sha512-dwXFwByc/ajSV6m5bcKAPwe4yDDF6D614pxmIi5odytzxRlwqF6nwoiCek80Ixc7Cvma5awClxrzFtxCQvcM8w==}
+    dev: false
+
+  /js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /loose-envify@1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
+  /lru-cache@10.2.0:
+    resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
+    engines: {node: 14 || >=16.14}
+    dev: false
+
+  /ms@2.1.2:
+    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: false
+
+  /nanoid@3.3.7:
+    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: false
+
+  /next@14.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-wlzrsbfeSU48YQBjZhDzOwhWhGsy+uQycR8bHAOt1LY1bn3zZEcDyHQOEoN3aWzQ8LHCAJ1nqrWCc9XF2+O45Q==}
+    engines: {node: '>=18.17.0'}
+    hasBin: true
+    peerDependencies:
+      '@opentelemetry/api': ^1.1.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      sass: ^1.3.0
+    peerDependenciesMeta:
+      '@opentelemetry/api':
+        optional: true
+      sass:
+        optional: true
+    dependencies:
+      '@next/env': 14.1.0
+      '@swc/helpers': 0.5.2
+      busboy: 1.6.0
+      caniuse-lite: 1.0.30001588
+      graceful-fs: 4.2.11
+      postcss: 8.4.31
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      styled-jsx: 5.1.1(react@18.2.0)
+    optionalDependencies:
+      '@next/swc-darwin-arm64': 14.1.0
+      '@next/swc-darwin-x64': 14.1.0
+      '@next/swc-linux-arm64-gnu': 14.1.0
+      '@next/swc-linux-arm64-musl': 14.1.0
+      '@next/swc-linux-x64-gnu': 14.1.0
+      '@next/swc-linux-x64-musl': 14.1.0
+      '@next/swc-win32-arm64-msvc': 14.1.0
+      '@next/swc-win32-ia32-msvc': 14.1.0
+      '@next/swc-win32-x64-msvc': 14.1.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - babel-plugin-macros
+    dev: false
+
+  /picocolors@1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: false
+
+  /postcss@8.4.31:
+    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: false
+
+  /react-dom@18.2.0(react@18.2.0):
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: false
+
+  /react@18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
+
+  /readable-stream@3.6.2:
+    resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
+    engines: {node: '>= 6'}
+    dependencies:
+      inherits: 2.0.4
+      string_decoder: 1.3.0
+      util-deprecate: 1.0.2
+    dev: false
+
+  /rust-verkle-wasm@0.0.1:
+    resolution: {integrity: sha512-BN6fiTsxcd2dCECz/cHtGTt9cdLJR925nh7iAuRcj8ymKw7OOaPmCneQZ7JePOJ/ia27TjEL91VdOi88Yf+mcA==}
+    dev: false
+
+  /rustbn-wasm@0.2.0:
+    resolution: {integrity: sha512-FThvYFNTqrEKGqXuseeg0zR7yROh/6U1617mCHF68OVqrN1tNKRN7Tdwy4WayPVsCmmK+eMxtIZX1qL6JxTkMg==}
+    dependencies:
+      '@scure/base': 1.1.5
+    dev: false
+
+  /safe-buffer@5.1.2:
+    resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
+    dev: false
+
+  /safe-buffer@5.2.1:
+    resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
+    dev: false
+
+  /scheduler@0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
+
+  /source-map-js@1.0.2:
+    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /streamsearch@1.1.0:
+    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
+    engines: {node: '>=10.0.0'}
+    dev: false
+
+  /string_decoder@1.3.0:
+    resolution: {integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==}
+    dependencies:
+      safe-buffer: 5.2.1
+    dev: false
+
+  /styled-jsx@5.1.1(react@18.2.0):
+    resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      babel-plugin-macros: '*'
+      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      babel-plugin-macros:
+        optional: true
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+    dev: false
+
+  /tevm@1.0.0-next.40(typescript@5.3.3):
+    resolution: {integrity: sha512-m2jcQrBA2WTSORSeqVrSiREN5D2Azyu9I7KVmAwBrN79hKD1PPbjy81L1yEiURsFRRZQwlK4NXp2vhJ7ycAxjQ==}
+    dependencies:
+      '@tevm/actions-types': 1.0.0-next.40
+      '@tevm/base-client': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/client-types': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/contract': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/decorators': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/errors': 1.0.0-next.40
+      '@tevm/http-client': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/jsonrpc': 1.0.0-next.40
+      '@tevm/memory-client': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/precompiles': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/predeploys': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/procedures-types': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/server': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/state': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/sync-storage-persister': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+    dev: false
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
+  /util-deprecate@1.0.2:
+    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: false
+
+  /viem@2.7.11(typescript@5.3.3)(zod@3.22.4):
+    resolution: {integrity: sha512-qlEPF9YOgPVqjTyom73TVAekAYrIe68megO07u55p7pKWgLt0i9KD6Mrmiw7pd7oHh86vIppcygwQMDNGX1YAw==}
+    peerDependencies:
+      typescript: '>=5.0.4'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@adraffy/ens-normalize': 1.10.0
+      '@noble/curves': 1.2.0
+      '@noble/hashes': 1.3.2
+      '@scure/bip32': 1.3.2
+      '@scure/bip39': 1.2.1
+      abitype: 1.0.0(typescript@5.3.3)(zod@3.22.4)
+      isows: 1.0.3(ws@8.13.0)
+      typescript: 5.3.3
+      ws: 8.13.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /ws@8.13.0:
+    resolution: {integrity: sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+    dev: false
