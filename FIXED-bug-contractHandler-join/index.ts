@@ -1,4 +1,9 @@
+/* -------------------------------------------------------------------------- */
+/*                                    FIXED                                   */
+/* -------------------------------------------------------------------------- */
+
 // tevm@1.0.0-next.39
+// Fixed in tevm@1.0.0-next.44
 // Run with: pnpm ts-node bug-contractHandler-join/index.ts
 import { TevmClient, createMemoryClient } from 'tevm';
 import { MOCKERC20_BYTECODE, MOCKERC20_ABI } from '../constants';
@@ -10,7 +15,7 @@ const token = `0x${'3'.repeat(40)}` as const;
 
 const run = async () => {
   // Create client
-  const tevm = await createMemoryClient({
+  const tevm = createMemoryClient({
     fork: {
       url: 'https://mainnet.optimism.io',
     },
@@ -25,19 +30,23 @@ const run = async () => {
   // No matter if the transaction should succeed or fail, it will throw the same error:
   // `TypeError: Cannot read properties of undefined (reading 'join')`
   // at `@tevm/actions/src/tevm/contractHandler.js:37`
-  const { errors } = await tevm.contract({
-    caller,
-    to: token,
-    abi: MOCKERC20_ABI,
-    // Replace this:
-    functionName: 'transfer',
-    // ...  with one of these and it should work:
-    // functionName: 'mint',
-    // functionName: 'approve',
-    args: [recipient, amount],
-  });
+  try {
+    const { errors } = await tevm.contract({
+      caller,
+      to: token,
+      abi: MOCKERC20_ABI,
+      // Replace this:
+      functionName: 'transfer',
+      // ...  with one of these and it should work:
+      // functionName: 'mint',
+      // functionName: 'approve',
+      args: [recipient, amount],
+    });
 
-  if (errors) console.log('Errors:', errors);
+    if (errors) console.log('Errors:', errors);
+  } catch (error) {
+    console.error('Error:', error);
+  }
 };
 
 run();

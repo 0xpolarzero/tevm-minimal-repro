@@ -8,7 +8,7 @@
   "license": "ISC",
   "dependencies": {
     "node-ts": "^6.0.1",
-    "tevm": "1.0.0-next.39"
+    "tevm": "1.0.0-next.44"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",

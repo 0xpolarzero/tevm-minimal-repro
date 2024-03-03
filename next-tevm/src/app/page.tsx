@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-import TevmClient from '@/components/TevmClient';
+import dynamic from 'next/dynamic';
+const TevmClient = dynamic(() => import('@/components/TevmClient'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
