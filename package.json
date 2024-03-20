@@ -7,8 +7,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tevm/opstack": "1.0.0-next.43",
     "node-ts": "^6.0.1",
-    "tevm": "1.0.0-next.44"
+    "tevm": "1.0.0-next.44",
+    "viem": "^2.7.18"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",

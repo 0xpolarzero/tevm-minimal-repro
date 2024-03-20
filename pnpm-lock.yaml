@@ -5,12 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@tevm/opstack':
+    specifier: 1.0.0-next.43
+    version: 1.0.0-next.43(typescript@5.3.3)(viem@2.7.18)
   node-ts:
     specifier: ^6.0.1
     version: 6.0.1
   tevm:
     specifier: 1.0.0-next.44
     version: 1.0.0-next.44(typescript@5.3.3)
+  viem:
+    specifier: ^2.7.18
+    version: 2.7.18(typescript@5.3.3)(zod@3.22.4)
 
 devDependencies:
   '@types/node':
@@ -35,6 +41,11 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
+
+  /@eth-optimism/contracts-bedrock@0.17.1:
+    resolution: {integrity: sha512-Hc5peN5PM8kzl9dzqSD5jv6ED3QliO1DF0dXLRJxfrXR7/rmEeyuAYESUwUM0gdJZjkwRYiS5m230BI6bQmnlw==}
+    requiresBuild: true
+    dev: false
 
   /@ethereumjs/block@5.1.1:
     resolution: {integrity: sha512-YRu5vzL+cCqr/0anGkgrMB/wLGmIbFrwLRFazAIXijb0VkxPqjWI2fMLhB4B8pOV6Xlp07jfjr25fLOAIzYYqA==}
@@ -437,6 +448,25 @@ packages:
       '@tevm/contract': 1.0.0-next.40(typescript@5.3.3)
       '@tevm/decorators': 1.0.0-next.42(typescript@5.3.3)
       '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - c-kzg
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@tevm/opstack@1.0.0-next.43(typescript@5.3.3)(viem@2.7.18):
+    resolution: {integrity: sha512-oveDKNxCrAbDlchDCL2IVohuHqSQ5Vzpz5D/b0cIscmBUIV2ow7qYVH2q6iQEPYYVgnciAAAOjomyxxQrl8Geg==}
+    peerDependencies:
+      viem: 2.x.x
+    dependencies:
+      '@eth-optimism/contracts-bedrock': 0.17.1
+      '@tevm/contract': 1.0.0-next.40(typescript@5.3.3)
+      '@tevm/memory-client': 1.0.0-next.42(typescript@5.3.3)
+      '@tevm/utils': 1.0.0-next.40(typescript@5.3.3)
+      viem: 2.7.18(typescript@5.3.3)(zod@3.22.4)
     transitivePeerDependencies:
       - bufferutil
       - c-kzg
