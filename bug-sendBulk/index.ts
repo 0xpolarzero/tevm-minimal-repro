@@ -62,7 +62,6 @@ const run = async () => {
   // Result:  undefined
   // Errors:  { code: 'revert', message: '0x', data: { errors: [ '0x' ] } }
   // Result:  undefined
-  // ? Both should return true but without `createTransaction` it returns false
 };
 
 run();
